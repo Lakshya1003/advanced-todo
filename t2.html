@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Quadrants</title>
+<link rel = "stylesheet" href="stylesheet/t2.css">
+</head>
+<body style="background: linear-gradient(to right, #4e54c8, #8f94fb); 
+             height: 100vh; 
+             margin: 0;">
+<center>
+    <h1>Your Work, Your Priority</h1>
+    <div class="matrix-container">
+        <!-- Quadrants 1 to 4 -->
+
+        <div class="quadrant">
+            <h2>Important + Urgent</h2>
+            <div class="input-section">
+                <input type="text" id="taskInput1" placeholder="Enter a new task">
+                <button onclick="addTask('taskInput1', 'todoList1', 'completedList1')">Add Task</button>
+            </div>
+            <div class="list-section">
+                <h3>To-Do</h3>
+                <ul id="todoList1"></ul>
+            </div>
+            <div class="list-section">
+                <h3>Completed</h3>
+                <ul id="completedList1"></ul>
+            </div>
+        </div>
+
+        <div class="quadrant">
+            <h2>Important + Not Urgent</h2>
+            <div class="input-section">
+                <input type="text" id="taskInput2" placeholder="Enter a new task">
+                <button onclick="addTask('taskInput2', 'todoList2', 'completedList2')">Add Task</button>
+            </div>
+            <div class="list-section">
+                <h3>To-Do</h3>
+                <ul id="todoList2"></ul>
+            </div>
+            <div class="list-section">
+                <h3>Completed</h3>
+                <ul id="completedList2"></ul>
+            </div>
+        </div>
+
+        <div class="quadrant">
+            <h2>Not Important + Urgent</h2>
+            <div class="input-section">
+                <input type="text" id="taskInput3" placeholder="Enter a new task">
+                <button onclick="addTask('taskInput3', 'todoList3', 'completedList3')">Add Task</button>
+            </div>
+            <div class="list-section">
+                <h3>To-Do</h3>
+                <ul id="todoList3"></ul>
+            </div>
+            <div class="list-section">
+                <h3>Completed</h3>
+                <ul id="completedList3"></ul>
+            </div>
+        </div>
+
+        <div class="quadrant">
+            <h2>Not Important + Not Urgent</h2>
+            <div class="input-section">
+                <input type="text" id="taskInput4" placeholder="Enter a new task">
+                <button onclick="addTask('taskInput4', 'todoList4', 'completedList4')">Add Task</button>
+            </div>
+            <div class="list-section">
+                <h3>To-Do</h3>
+                <ul id="todoList4"></ul>
+            </div>
+            <div class="list-section">
+                <h3>Completed</h3>
+                <ul id="completedList4"></ul>
+            </div>
+        </div>
+    </div>
+<script src="js/t2.js"></script>
+    
+</body>
+</html>

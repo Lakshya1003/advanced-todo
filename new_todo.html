@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Deadline Feature</title>
+<link rel="stylesheet" href="stylesheet/new_todo.css">
+</head>
+<main>
+<nav>
+<body style="background: linear-gradient(to right, #0CA4D4, #31FFB2); 
+             height: 100vh; 
+             margin: 0;">
+    <h1>To-Do List</h1>
+    <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Enter a new task">
+        <input type="date" id="deadlineInput">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+    <div class="list-section">
+        <h2>To-Do</h2>
+        <ul id="todoList"></ul>
+    </div>
+    <div class="list-section">
+        <h2>Completed</h2>
+        <ul id="completedList"></ul>
+    </div>
+</nav>
+</main>
+<script src="js/new_todo.js"></script>
+   </body>
+</html>

@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+#header-text {
+    font-size: 2.5em;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007acc;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+/* Hyperlink Image Blocks */
+.hyperlink-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hyperlink-block {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 200px;
+}
+
+.hyperlink-block img {
+    width: 100%;
+    height: auto;
+}
+
+.hyperlink-block:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #header-text {
+        font-size: 2em;
+    }
+
+    .hyperlink-block {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    #header-text {
+        font-size: 1.8em;
+    }
+
+    header {
+        padding: 0.5em;
+    }
+
+    /* Adjust hyperlink images to icon size */
+    .hyperlink-block {
+        width: 80px; /* Icon size for mobile view */
+        height: 80px; /* Square shape */
+    }
+
+    .hyperlink-block img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure image fits in a square without distortion */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Progress Graph</title>
+<link rel="stylesheet" href="stylesheet/graph.css">
+</head>
+<body style="background: linear-gradient(to right, #B021F0, #9C9BF7); 
+             height: 100vh; 
+             margin: 0;">
+    <div class="container">
+        <h1>Daily Progress Tracker</h1>
+        <div class="input-section">
+            <label for="progressInput">Enter hours of progress:</label>
+            <input type="number" id="progressInput" min="0" max="24" placeholder="e.g., 5">
+            <button onclick="addProgress()">Add Progress</button>
+        </div>
+        <div id="chartContainer">
+            <canvas id="progressChart" width="400" height="300"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart.js Library from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Inline JavaScript -->
+    <script src="js/graph.js">
+    </script>
+</body>
+</html>
